@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+<form action="AddPetServlet" method="post">
+    <table>
+        <caption>宠物的基本信息</caption>
+        <tr>
+            <td>昵称:</td>
+            <td colspan="3"><input type="text" name="nickname"/></td>
+        </tr>
+        <tr>
+            <td>品种:</td>
+            <td colspan="3">
+                <select name="breed">
+                    <optgroup label="请选择">
+                        <option value="1">狗</option>
+                        <option value="2">猫</option>
+                        <option value="3">鸟</option>
+                        <option value="4">兔</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>性别:</td>
+            <td colspan="3"><input type="radio" name="gender" value="2"/>雌<input type="radio" name="gender" value="1"
+                                                                                 checked="checked"/>雄
+            </td>
+        </tr>
+        <tr>
+            <td>出生日期:</td>
+            <td><input type="date" name="birthday"/></td>
+            <td>yyy-mm-dd</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>宠物描述</td>
+            <td><textarea rows="8" cols="8" name="description"></textarea></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+            <td colspan="2"><input type="submit" value="提交"/><input type="reset" value="重置"/></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

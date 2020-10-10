@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title></title>
+</head>
+<body>
+<form action="AddProductServlet" method="post">
+    <table border="1">
+        <caption>新增理财信息</caption>
+        <tr>
+            <td>产品代码:</td>
+            <td colspan="2"><input type="text" name="id"/></td>
+        </tr>
+        <tr>
+            <td>风险评级:</td>
+            <td colspan="2">
+                <select name="riskLevel">
+                    <optgroup label="--请选择--">
+                        <option value="R2">R2</option>
+                        <option value="R3">R3</option>
+                    </optgroup>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td>预期收益:</td>
+            <td colspan="2"><input type="text" name="prospectiveEarning"/></td>
+        </tr>
+        <tr>
+            <td>发售起始日:</td>
+            <td><input type="date" name="startSale"/></td>
+            <td>yyyy-MM-dd格式</td>
+        </tr>
+        <tr>
+            <td>发售截止日:</td>
+            <td><input type="date" name="endSale"/></td>
+            <td>yyyy-MM-dd格式</td>
+        </tr>
+        <tr>
+            <td>产品到期日:</td>
+            <td><input type="date" name="expire"/></td>
+            <td>yyyy-MM-dd格式</td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="保存"/><input type="reset" value="重置"/><input type="button" value="返回"/></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>

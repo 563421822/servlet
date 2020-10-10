@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html
+        PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<head>
+    <title></title>
+    <script type="text/javascript" src="./js/file.js"></script>
+</head>
+<body>
+<form action="LoginServlet" method="post" onsubmit="return check()">
+    <table>
+        <caption>登录页面</caption>
+        <tr>
+            <td>用户名</td>
+            <td><input type="text" name="name" id="name" onblur="checkName()"/></td>
+            <td></td>
+            <td><img src="" alt="" class="status"/></td>
+        </tr>
+        <tr>
+            <td>密码</td>
+            <td><input type="password" name="password" id="password" onblur="checkPassword()"/></td>
+            <td></td>
+            <td><img src="" alt="" class="status"/></td>
+        </tr>
+        <tr>
+            <td>邮箱</td>
+            <td><input type="text" name="email" id="email" onblur="checkEmail()"/></td>
+            <td></td>
+            <td><img src="" alt="" class="status"/></td>
+        </tr>
+        <tr>
+            <td>验证码</td>
+            <td><input type="text" onchange="checkCode()" id="input"/></td>
+            <td><a href="javascript:void(0)"><img src="CodeServlet" alt="验证码加载失败" id="code" onclick="cannotSee()"/></a>
+            </td>
+            <td><img src="" alt="" class="status"/></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="checkbox" name="remember"/>记住我</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td><input type="submit" value="提交"/><input type="reset" value="重置"/><a href="forget.xthml">忘记密码?</a></td>
+            <td><a href="register.xhtml">注册</a></td>
+            <td></td>
+        </tr>
+    </table>
+</form>
+</body>
+</html>
